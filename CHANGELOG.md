@@ -4,12 +4,8 @@
 
 **Merged pull requests:**
 
+- test [\#5](https://github.com/steve-stonehouse/release-testing/pull/5)
 - test2 [\#4](https://github.com/steve-stonehouse/release-testing/pull/4)
-
-## [v1.0.0](https://github.com/steve-stonehouse/release-testing/tree/v1.0.0) (2021-04-19)
-
-**Merged pull requests:**
-
 - Fix token [\#3](https://github.com/steve-stonehouse/release-testing/pull/3)
 - Fix branch [\#2](https://github.com/steve-stonehouse/release-testing/pull/2)
 - Add test1 [\#1](https://github.com/steve-stonehouse/release-testing/pull/1)
