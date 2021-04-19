@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.1.0](https://github.com/steve-stonehouse/release-testing/tree/1.1.0) (2021-04-19)
+
 ## [1.0.0](https://github.com/steve-stonehouse/release-testing/tree/1.0.0) (2021-04-19)
 
 **Merged pull requests:**
