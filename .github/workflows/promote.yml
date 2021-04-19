@@ -41,7 +41,7 @@ jobs:
 
   create-release:
     runs-on: ubuntu-latest
-    needs: update-changelog
+    needs: [tag, update-changelog]
 
     steps:
       - uses: actions/checkout@v2
