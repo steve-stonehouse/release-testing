@@ -28,7 +28,8 @@ jobs:
           pullRequests: true
           prWoLabels: true
           addSections: '{"documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
-      - uses: stefanzweifel/git-auto-commit-action@v4
+
+      - uses: stefanzweifel/git-auto-commit-action@v4.10.0
         with:
           commit_message: CI - Update changelog for tag ${{ steps.get_version.outputs.version }}
           file_pattern: CHANGELOG.md
