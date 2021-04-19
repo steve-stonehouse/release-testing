@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/steve-stonehouse/release-testing/tree/HEAD)
+
+**Merged pull requests:**
+
+- test2 [\#4](https://github.com/steve-stonehouse/release-testing/pull/4)
+
 ## [v1.0.0](https://github.com/steve-stonehouse/release-testing/tree/v1.0.0) (2021-04-19)
 
 **Merged pull requests:**
