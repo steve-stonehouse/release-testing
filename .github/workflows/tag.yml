@@ -1,68 +1,16 @@
-name: Tag
-
+name: Bump version
 on:
-  push:
-    tags:
-      - v*
+  workflow_dispatch:
 
 jobs:
-  changelog:
+  build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Get version from tag
-        id: get_version
-        env:
-          GITHUB_REF: ${{ github.ref }}
-        run: |
-          echo "::set-output name=version::${GITHUB_TAG/refs\/tags\/v/}"
-
-      - uses: actions/checkout@v2
-
-      - name: Update Changelog
-        uses: heinrichreimer/github-changelog-generator-action@v2.1.1
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issues: true
-          issuesWoLabels: true
-          pullRequests: true
-          prWoLabels: true
-          addSections: '{"documentation":{"prefix":"**Documentation:**","labels":["documentation"]}}'
-
-      - uses: stefanzweifel/git-auto-commit-action@v4.7.2
-        with:
-          commit_message: CI - Update changelog for tag ${{ steps.get_version.outputs.version }}
-          file_pattern: CHANGELOG.md
-
-  release-notes:
-    runs-on: ubuntu-latest
-    needs: changelog
-
-    steps:
-      - name: Get version from tag
-        id: get_version
-        env:
-          GITHUB_REF: ${{ github.ref }}
-        run: |
-          echo "::set-output name=version::${GITHUB_TAG/refs\/tags\/v/}"
-
-      - uses: actions/checkout@v2
-
-      - name: Get Changelog Entry
-        id: changelog_reader
-        uses: mindsers/changelog-reader-action@v1
-        with:
-          version: ${{ steps.get_version.outputs.version }}
-          path: ./CHANGELOG.md
-
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
-          body: ${{ steps.changelog_reader.outputs.log_entry }}
-          draft: false
-          prerelease: false
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '0'
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@1.26.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        WITH_V: true
