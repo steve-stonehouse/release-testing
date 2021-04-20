@@ -26,6 +26,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: changelog
 
       - name: Update Changelog
         uses: heinrichreimer/github-changelog-generator-action@v2.1.1
@@ -38,6 +40,7 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4.7.2
         with:
+          branch: changelog
           commit_message: CI - Update changelog for tag ${{ needs.tag.outputs.tag }}
           file_pattern: CHANGELOG.md
 
@@ -47,6 +50,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: changelog
 
       - name: Get Changelog Entry
         id: changelog_reader
