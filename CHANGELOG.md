@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased](https://github.com/steve-stonehouse/release-testing/tree/HEAD)
+
+**Merged pull requests:**
+
+- test [\#12](https://github.com/steve-stonehouse/release-testing/pull/12)
+
 ## [1.4.0](https://github.com/steve-stonehouse/release-testing/tree/1.4.0) (2021-04-20)
 
 **Merged pull requests:**
@@ -7,7 +13,6 @@
 - Use branch. [\#11](https://github.com/steve-stonehouse/release-testing/pull/11)
 - test11 [\#10](https://github.com/steve-stonehouse/release-testing/pull/10)
 - test10 [\#9](https://github.com/steve-stonehouse/release-testing/pull/9)
-- test2 [\#4](https://github.com/steve-stonehouse/release-testing/pull/4)
 
 ## [1.3.0](https://github.com/steve-stonehouse/release-testing/tree/1.3.0) (2021-04-19)
 
@@ -29,6 +34,7 @@
 
 - Fix dep [\#6](https://github.com/steve-stonehouse/release-testing/pull/6)
 - test [\#5](https://github.com/steve-stonehouse/release-testing/pull/5)
+- test2 [\#4](https://github.com/steve-stonehouse/release-testing/pull/4)
 - Fix token [\#3](https://github.com/steve-stonehouse/release-testing/pull/3)
 - Fix branch [\#2](https://github.com/steve-stonehouse/release-testing/pull/2)
 - Add test1 [\#1](https://github.com/steve-stonehouse/release-testing/pull/1)
