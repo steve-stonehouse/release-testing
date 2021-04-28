@@ -1,5 +1,7 @@
 # Changelog
 
+## [1.7.0](https://github.com/steve-stonehouse/release-testing/tree/1.7.0) (2021-04-28)
+
 ## [1.6.0](https://github.com/steve-stonehouse/release-testing/tree/1.6.0) (2021-04-21)
 
 
