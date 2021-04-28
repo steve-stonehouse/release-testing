@@ -37,7 +37,7 @@ jobs:
           issuesWoLabels: false
           pullRequests: true
           prWoLabels: true
-          maxIssues: 3
+          sinceTag: "1.5.0"
 
       - uses: stefanzweifel/git-auto-commit-action@v4.7.2
         with:
