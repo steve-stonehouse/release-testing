@@ -1,16 +1,18 @@
 # Changelog
 
-## [Unreleased](https://github.com/steve-stonehouse/release-testing/tree/HEAD)
-
-**Merged pull requests:**
-
-- Add sinceTag to limit lookups. [\#14](https://github.com/steve-stonehouse/release-testing/pull/14)
-
 ## [1.6.0](https://github.com/steve-stonehouse/release-testing/tree/1.6.0) (2021-04-21)
 
-**Merged pull requests:**
+## [1.5.0](https://github.com/steve-stonehouse/release-testing/tree/1.5.0) (2021-04-21)
 
-- test [\#13](https://github.com/steve-stonehouse/release-testing/pull/13)
+## [1.4.0](https://github.com/steve-stonehouse/release-testing/tree/1.4.0) (2021-04-20)
+
+## [1.3.0](https://github.com/steve-stonehouse/release-testing/tree/1.3.0) (2021-04-19)
+
+## [1.2.0](https://github.com/steve-stonehouse/release-testing/tree/1.2.0) (2021-04-19)
+
+## [1.1.0](https://github.com/steve-stonehouse/release-testing/tree/1.1.0) (2021-04-19)
+
+## [1.0.0](https://github.com/steve-stonehouse/release-testing/tree/1.0.0) (2021-04-19)
 
 
 
