@@ -28,3 +28,27 @@ jobs:
           branch: changelog
           commit_message: CI - Update changelog
           file_pattern: CHANGELOG.md
+
+      - name: Http
+        run: mkdir -p http
+
+      - name: Create log directories
+        working-directory: http/
+        run: mkdir -p \
+          var/log/adyen \
+          var/log/api_logger \
+          var/log/peoplevox \
+          var/log/intelligent_return \
+          var/report
+
+      - name: LS
+        working-directory: http/
+        run: ls -la
+
+      - name: Create log directories
+        working-directory: http/
+        run: mkdir -p var/log/adyen var/log/api_logger var/log/peoplevox var/log/intelligent_return var/report
+
+      - name: LS
+        working-directory: http/
+        run: ls -la
